@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/char_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0099FF"
+        ></android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/char_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#FF00FF"></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33CCFF"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/char_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:layout_marginLeft="10dp"
+            android:divider="#FF00FF"/>
+        <View
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"></View>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@drawable/login_btn"
+            android:text="发送"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

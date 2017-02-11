@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="65dp">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:id="@+id/view"></View>
+     <TextView
+         android:id="@+id/system_ID"
+         android:layout_width="80dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/view"
+         android:layout_toRightOf="@+id/view"
+         android:layout_toEndOf="@+id/view"
+         android:text="ID0000000"/>
+        
+        
+        <TextView
+            android:id="@+id/system_Type"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="消息类型"
+            android:layout_below="@+id/system_text"
+            android:layout_alignLeft="@+id/system_ID"
+            android:layout_alignStart="@+id/system_ID" />
+        
+        
+        <TextView
+            android:id="@+id/system_text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/system_ID"
+            android:layout_toRightOf="@+id/system_ID"
+            android:layout_toEndOf="@+id/system_ID"
+            android:text="来自ID00000的好友请求"
+            android:textSize="20dp"/>
+        
+        
+        <TextView
+            android:id="@+id/system_time"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="10:15"
+            android:layout_above="@+id/system_Type"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        
+        <TextView
+            android:id="@+id/isUnread"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="已阅"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/system_text"
+            android:layout_toEndOf="@+id/system_text" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </RelativeLayout>   
+    
+    
+    
+    
+</LinearLayout>

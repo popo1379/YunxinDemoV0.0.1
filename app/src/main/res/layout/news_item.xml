@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    >
+    <ImageView
+        android:id="@+id/news_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/news_constact"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+
+        android:layout_alignTop="@+id/news_imageview"
+        android:layout_toRightOf="@+id/news_imageview"
+        android:layout_toEndOf="@+id/news_imageview"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="15dp" />
+<TextView
+    android:layout_width="325dp"
+    android:layout_height="25dp"
+    android:id="@+id/news_content"
+
+    android:layout_alignBottom="@+id/news_imageview"
+    android:layout_alignLeft="@+id/news_constact"
+    android:layout_alignStart="@+id/news_constact" />
+
+<TextView
+    android:id="@+id/news_time"
+    android:layout_width="50dp"
+    android:layout_height="20dp"
+    android:layout_alignTop="@+id/news_constact"
+    android:layout_alignRight="@+id/news_content"
+    android:layout_alignEnd="@+id/news_content" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
